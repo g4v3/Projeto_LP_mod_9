@@ -2,7 +2,7 @@
 
 struct texto_inicio {
 
-    struct texto_continuacao
+    struct texto_continuacao *
             o_texto_propriamente_dito;
 };
 
@@ -21,6 +21,7 @@ struct texto_continuacao {
             fim_do_texto
          :  1;
 
-    struct texto_continuacao
+    struct texto_continuacao *
             proximo_segmento;
 };
+
